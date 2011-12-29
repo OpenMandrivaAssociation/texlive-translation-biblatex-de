@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-bibla
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A German translation of the documentation of biblatex.
@@ -27,7 +25,6 @@ A German translation of the documentation of biblatex.
 %doc %{_texmfdistdir}/doc/latex/translation-biblatex-de/README
 %doc %{_texmfdistdir}/doc/latex/translation-biblatex-de/biblatex-de.pdf
 %doc %{_texmfdistdir}/doc/latex/translation-biblatex-de/biblatex-de.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -38,5 +35,3 @@ A German translation of the documentation of biblatex.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
