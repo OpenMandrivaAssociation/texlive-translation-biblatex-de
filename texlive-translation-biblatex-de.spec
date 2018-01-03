@@ -1,12 +1,6 @@
-# revision 24386
-# category Package
-# catalog-ctan /info/translations/biblatex/de
-# catalog-date 2011-10-24 16:26:34 +0200
-# catalog-license lppl
-# catalog-version 1.0
 Name:		texlive-translation-biblatex-de
-Version:	1.0
-Release:	10
+Version:	3.0
+Release:	1
 Summary:	German translation of the documentation of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/translations/biblatex/de
@@ -22,9 +16,7 @@ A German translation of the documentation of biblatex.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdistdir}/doc/latex/translation-biblatex-de/README
-%doc %{_texmfdistdir}/doc/latex/translation-biblatex-de/biblatex-de.pdf
-%doc %{_texmfdistdir}/doc/latex/translation-biblatex-de/biblatex-de.tex
+%doc %{_texmfdistdir}/doc/latex/translation-biblatex-de
 
 #-----------------------------------------------------------------------
 %prep
