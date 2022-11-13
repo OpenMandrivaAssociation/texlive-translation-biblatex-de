@@ -1,12 +1,12 @@
 Name:		texlive-translation-biblatex-de
-Version:	3.0
-Release:	3
+Version:	59382
+Release:	1
 Summary:	German translation of the documentation of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/translations/biblatex/de
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,7 +20,7 @@ A German translation of the documentation of biblatex.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
