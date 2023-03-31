@@ -1,6 +1,6 @@
 Name:		texlive-translation-biblatex-de
 Version:	59382
-Release:	1
+Release:	2
 Summary:	German translation of the documentation of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/translations/biblatex/de
