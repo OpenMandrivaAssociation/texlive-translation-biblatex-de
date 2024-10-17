@@ -3,7 +3,7 @@ Version:	59382
 Release:	2
 Summary:	German translation of the documentation of biblatex
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/translations/biblatex/de
+URL:		https://www.ctan.org/tex-archive/info/translations/biblatex/de
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.doc.r%{version}.tar.xz
