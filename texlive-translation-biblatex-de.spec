@@ -1,29 +1,20 @@
-Name:		texlive-translation-biblatex-de
-Version:	59382
-Release:	2
-Summary:	German translation of the documentation of biblatex
+%global tl_name translation-biblatex-de
+%global tl_revision 59382
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	3.15b
+Release:	%{tl_revision}.1
+Summary:	German translation of the User Guide for BibLaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/info/translations/biblatex/de
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.doc.r%{version}.tar.xz
+License:	lppl
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/translation-biblatex-de.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-A German translation of the documentation of biblatex.
+A German translation of the User Guide for BibLaTeX.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/latex/translation-biblatex-de
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
